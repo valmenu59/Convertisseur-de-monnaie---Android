@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:clickable="true"
+                                                   tools:ignore="ExtraText">
+
+    <TextView
+            android:id="@+id/bienvenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Super convertisseur de monnaie!"
+            android:textFontWeight="25"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="250dp"
+            tools:ignore="MissingConstraints"
+    />
+
+
+    <EditText
+            android:id="@+id/inputNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ecrivez_un_nombre"
+            android:inputType="number|numberDecimal"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bienvenue"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+    />
+
+
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boutonValider"
+            android:text="@string/convertir_la_monnaie"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputNombre"
+            android:layout_marginTop="50dp"
+            tools:ignore="InvalidId,MissingConstraints"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TP1_CONVERTISSEUR_MONNAIE</string>
+    <string name="ecrivez_un_nombre">Ecrivez un nombre</string>
+    <string name="convertir_la_monnaie">Convertir la monnaie</string>
+</resources>
